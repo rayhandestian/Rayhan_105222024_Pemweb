@@ -8,7 +8,19 @@
         		</button>
       		</div>
 	      	<div class="modal-body">
-				<i> Tuliskan Inputan Form untuk tambah jadwal </i>
+				@csrf
+				<div class="form-group">
+					<label for="event">Nama Jadwal</label>
+					<input type="text" class="form-control" id="event" name="event" required>
+				</div>
+				<div class="form-group">
+					<label for="start">Start</label>
+					<input type="date" class="form-control" id="start" name="start" required>
+				</div>
+				<div class="form-group">
+					<label for="end">End</label>
+					<input type="date" class="form-control" id="end" name="end" required>
+				</div>
 	      	</div>
 	      	<div class="modal-footer">
 	        	<button type="submit" class="btn btn-primary"> Submit </button>
