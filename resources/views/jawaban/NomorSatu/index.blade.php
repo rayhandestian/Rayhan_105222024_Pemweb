@@ -20,7 +20,15 @@
         		</button>
       		</div>
 	      	<div class="modal-body">
-	        	<i> Tuliskan Inputan Form untuk login </i>
+	            @csrf
+	            <div class="form-group">
+	                <label for="login">Email or Username</label>
+	                <input type="text" class="form-control" id="login" name="login" required>
+	            </div>
+	            <div class="form-group">
+	                <label for="password">Password</label>
+	                <input type="password" class="form-control" id="password" name="password" required>
+	            </div>
 	      	</div>
 	      	<div class="modal-footer">
 	        	<button type="submit" class="btn btn-primary"> Submit </button>

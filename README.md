@@ -1,3 +1,22 @@
+## SQLite Setup
+1. Create database file:
+   ```
+   type nul > database/database.sqlite
+   ```
+
+2. In `.env`, use absolute path:
+   ```
+   DB_CONNECTION=sqlite
+   DB_DATABASE=C:/full/path/to/database/database.sqlite
+   ```
+
+3. Run migrations:
+   ```
+   php artisan migrate
+   ```
+
+---
+
 <h1> Panduan UAS Pemweb 2024/2025 </h1> 
 <h3> Contoh consume API dengan Jquery : </h3>
 <code>
