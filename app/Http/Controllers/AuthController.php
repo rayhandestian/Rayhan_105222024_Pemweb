@@ -18,4 +18,9 @@ class AuthController extends Controller {
         $nomorSatu = new NomorSatu();
         return $nomorSatu->logout($request);
     }
+
+    public function register(Request $request) {
+        $nomorSatu = new NomorSatu();
+        return $nomorSatu->register($request);
+    }
 }
